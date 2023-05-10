@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #010922;
+}
+
+main {
+    margin: 0 5vw;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 1rem;
+}
+
+.b2,
+.b4 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.b2 .head,
+.b4 .head {
+    width: 45%;
+    height: 10%;
+}
+
+.b2 .head h2,
+.b4 .head h2 {
+    font-size: 2.6rem;
+    margin-top: 0.5rem;
+}
+
+.b2 article img,
+.b4 article img {
+    width: 100%;
+    max-width: 14rem;
+}
+
+.Buttons {
+    margin-left: 2.4rem;
+    margin-top: 0.5rem;
+}
+
+#buy {
+    background-color: #8080D7;
+    border: none;
+    border-radius: 2rem;
+    padding: 0.4rem;
+}
+
+#buy:hover {
+    transition: 1s;
+    background-color: #010922;
+    border: 1px solid white;
+}
+
+#sell {
+    background-color: #010922;
+    border-radius: 2rem;
+    padding: 0.4rem;
+    border: 1px solid white;
+}
+
+#sell:hover {
+    transition: 1s;
+    background-color: #8080D7;
+    border: 1px solid white;
+}
+
+.b3 {
+    margin: 0.7rem;
+    padding-bottom: 5rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 97.9vw;
+}
+
+.b3 article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.b3 article img {
+    margin: 0.8rem;
+    max-width: 100%;
+}
+
+.person {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.person article {
+    margin: 2rem;
+    text-align: center;
+}
+
+/* Media Queries */
+@media screen and (min-width: 400px) {
+
+    .b4 {
+        margin-top: 40rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        margin: 0 10vw;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    main {
+        margin: 0 15vw;
+    }
+
+    .b2 .head,
+    .b4 .head {
+        width: 40%;
+    }
+
+    .b2 article img,
+    .b4 article img {
+        max-width: 18rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    main {
+        margin: 0 20vw;
+    }
+
+    .b2 .head,
+    .b4 .head {
+        width: 35%;
+    }
+
+    .b2 article img,
+    .b4 article img {
+        max-width: 20rem;
+    }
+
+    .person article {
+        flex: 1 1 20%;
+        max-width: 20%;
+    }
+}
